@@ -1,6 +1,4 @@
 import { ref, computed, watch } from 'vue'
-import { GeoLocation } from '@hebcal/noaa'
-import { Zmanim } from '@hebcal/core/dist/esm/zmanim'
 import { lsGet, lsSet } from '@/utils/persistence'
 
 /**
@@ -27,33 +25,26 @@ function nearestCity(lat: number, lng: number): City {
   return best
 }
 
-export function makeGloc(city: City): InstanceType<typeof GeoLocation> {
-  return new GeoLocation(city.name, city.lat, city.lng, city.elevation, city.tzid)
-}
-
-export function fmtTime(d: Date | null): string | null {
-  if (!d || isNaN(d.getTime())) return null
-  return d.toLocaleTimeString('he-IL', { hour: '2-digit', minute: '2-digit', hour12: false })
+  return zman?.printed ?? null
 }
 
 export function calcDayZmanim(city: City, date: Date) {
   try {
-    const z = new Zmanim(makeGloc(city), date, false)
     return {
-      chatzotNight: fmtTime(z.chatzotNight()),
-      alot: fmtTime(z.alotHaShachar()),
-      misheyakir: fmtTime(z.misheyakir()),
-      sunrise: fmtTime(z.sunrise()),
-      sofShmaGra: fmtTime(z.sofZmanShma()),
-      sofShmaMga: fmtTime(z.sofZmanShmaMGA()),
-      sofTfillaGra: fmtTime(z.sofZmanTfilla()),
-      sofTfillaMga: fmtTime(z.sofZmanTfillaMGA()),
-      chatzot: fmtTime(z.chatzot()),
-      minchaGedola: fmtTime(z.minchaGedola()),
-      minchaKetana: fmtTime(z.minchaKetana()),
-      plag: fmtTime(z.plagHaMincha()),
-      sunset: fmtTime(z.sunset()),
-      tzeit: fmtTime(z.tzeit()),
+      chatzotNight: printed(z.chatzotNight),
+      alot: printed(z.alot),
+      misheyakir: printed(z.misheyakir),
+      sunrise: printed(z.sunrise),
+      sofShmaGra: printed(z.sofShmaGra),
+      sofShmaMga: printed(z.sofShmaMga),
+      sofTfillaGra: printed(z.sofTfillaGra),
+      sofTfillaMga: printed(z.sofTfillaMga),
+      chatzot: printed(z.chatzot),
+      minchaGedola: printed(z.minchaGedola),
+      minchaKetana: printed(z.minchaKetana),
+      plag: printed(z.plag),
+      sunset: printed(z.sunset),
+      tzeit: printed(z.tzeit),
     }
   } catch {
     return {

@@ -304,18 +304,6 @@ button.chip {
   padding: 6px 14px 10px;
   border-top: 1px solid color-mix(in srgb, var(--border-color) 40%, transparent);
 }
-.warning {
-  font-size: 11px;
-  font-weight: 600;
-  color: #c8a000;
-  background: color-mix(in srgb, var(--status-warning) 12%, transparent);
-  border: 1px solid color-mix(in srgb, var(--status-warning) 40%, transparent);
-  border-radius: 4px;
-  padding: 5px 10px;
-  margin: 0 0 8px;
-  text-align: center;
-  line-height: 1.4;
-}
 .extras {
   display: flex;
   flex-direction: column;
