@@ -90,4 +90,5 @@ export const CITIES: City[] = [
   { name: 'לונדון', key: 'london', lat: 51.5074, lng: -0.1278, elevation: 10, tzid: 'Europe/London' },
   { name: 'אנטוורפן', key: 'antwerp', lat: 51.2194, lng: 4.4025, elevation: 10, tzid: 'Europe/Brussels' },
   { name: 'מונטריאול', key: 'montreal', lat: 45.5017, lng: -73.5673, elevation: 30, tzid: 'America/Toronto' },
+  // coordinates, and its default elevation or else the one their site looks up for those coordinates.
 ]
