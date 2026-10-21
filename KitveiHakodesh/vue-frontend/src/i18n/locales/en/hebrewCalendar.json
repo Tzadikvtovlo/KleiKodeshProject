@@ -54,5 +54,27 @@
     "oct": "October",
     "nov": "November",
     "dec": "December"
+  },
+  "city": {
+    "jerusalem": "Jerusalem",
+    "telAviv": "Tel Aviv-Yafo",
+    "haifa": "Haifa",
+    "beerSheva": "Beersheba",
+    "ashdod": "Ashdod",
+    "netanya": "Netanya",
+    "petachTikva": "Petah Tikva",
+    "rishonLezion": "Rishon LeZion",
+    "bneiBrak": "Bnei Brak",
+    "ramatGan": "Ramat Gan",
+    "herzliya": "Herzliya",
+    "rechovot": "Rehovot",
+    "modiin": "Modi'in",
+    "eilat": "Eilat",
+    "tzfat": "Safed",
+    "tiberias": "Tiberias",
+    "newYork": "New York",
+    "london": "London",
+    "antwerp": "Antwerp",
+    "montreal": "Montreal",
   }
 }

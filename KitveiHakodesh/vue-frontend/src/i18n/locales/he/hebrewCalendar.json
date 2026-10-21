@@ -54,5 +54,27 @@
     "oct": "אוקטובר",
     "nov": "נובמבר",
     "dec": "דצמבר"
+  },
+  "city": {
+    "jerusalem": "ירושלים",
+    "telAviv": "תל אביב",
+    "haifa": "חיפה",
+    "beerSheva": "באר שבע",
+    "ashdod": "אשדוד",
+    "netanya": "נתניה",
+    "petachTikva": "פתח תקווה",
+    "rishonLezion": "ראשון לציון",
+    "bneiBrak": "בני ברק",
+    "ramatGan": "רמת גן",
+    "herzliya": "הרצליה",
+    "rechovot": "רחובות",
+    "modiin": "מודיעין",
+    "eilat": "אילת",
+    "tzfat": "צפת",
+    "tiberias": "טבריה",
+    "newYork": "ניו יורק",
+    "london": "לונדון",
+    "antwerp": "אנטוורפן",
+    "montreal": "מונטריאול",
   }
 }
